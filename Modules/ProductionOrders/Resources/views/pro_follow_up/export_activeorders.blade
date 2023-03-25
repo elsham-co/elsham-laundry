@@ -1,0 +1,31 @@
+<table id="datatable" class="table  table-hover table-sm table-bordered p-0" data-page-length="50"
+>
+ <thead>
+ <tr style="text-align: center">
+    <th class="alert-success">#</th>
+    <th>{{__('Customer Name')}}</th>
+    <th>{{__('Production Order')}}</th>
+    <th>{{__('Number Voucher')}}</th>
+    <th>{{__('Fabrics Name')}}</th>
+    <th>{{__('Fabrics Pieces')}}</th>
+    <th>{{__('Colors')}}</th>
+    <th>{{__('Fashion Count')}}</th>
+    <th>{{__('Location')}}</th>
+    <th>{{__('Prodction Date')}}</th>
+ </tr>
+ </thead>
+ <tbody>
+ @foreach($Store as $Stores)
+     <tr>
+        <td>{{ $loop->index + 1 }}</td>
+        <td>{{ $Stores->Customer->customers_name }}</td>
+        <td>{{ $Stores->production_order  }}</td>
+        <td>{{ $Stores->number_voucher }}</td>
+        <td>{{ $Stores->Fabric->fabricName}}</td>
+        <td>{{ $Stores->total }}</td>
+        <td>{{ $Stores->Color->colorname }}</td>
+        <td>{{ $Stores->totalfashion }}</td>
+        <td>{{ $Stores->location }}</td>
+        <td>{{ $Stores->created_at }}</td>
+    </tr>
+ @endforeach
