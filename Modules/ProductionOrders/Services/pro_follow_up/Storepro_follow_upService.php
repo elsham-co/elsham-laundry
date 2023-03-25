@@ -150,15 +150,15 @@ class Storepro_follow_upService
         ->join('customers','stores.customer_id','customers.customers_code')
         ->join('fabric','stores.fabrics_code','fabric.fabric_code')
         ->join('colors_stages','stores.colors_code','colors_stages.colorcode')
-        ->join('transaction','stores.production_order','transaction.production_order')
+        // ->join('transaction','stores.production_order','transaction.production_order')
         // ->where('ores_recipt.deleted_at',null)
         ->select('stores.*')
-        ->distinct()
+        ->distinct();
         // ->where('transaction.stage1', 'ايمو');
         /////////////////////////
-        ->where(function ($query) {
-            $query->where('transaction.stage1', '<>', 'ايمو');
-        });              
+        // ->where(function ($query) {
+        //     $query->where('transaction.stage1', '<>', 'ايمو');
+        // });              
         
 
 ////////////////////////////////

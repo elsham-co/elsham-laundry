@@ -356,17 +356,18 @@
                                         <span class="menu-item-text">{{__('Follow-up Movement')}}</span>
                                     </a>
                                 </div>
-                                <div class="menu-item">
+                                {{-- <div class="menu-item">
                                     <a href="{{route('transaction.index')}}"
                                        class="menu-item-link {{cuurentroute('transaction.index','active')}}">
                                      
                                         <span class="menu-item-text">{{__('Follow-up stages')}}</span>
                                     </a>
-                                </div>
+                                </div> --}}
                                 @endcan
                          </div>
             </div>
             @endcan
+{{-- نهايه المتابعه --}}
 {{-- نهايه المتابعه --}}
 
 
