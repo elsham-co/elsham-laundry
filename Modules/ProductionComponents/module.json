@@ -1,0 +1,13 @@
+{
+    "name": "ProductionComponents",
+    "alias": "productioncomponents",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProductionComponents\\Providers\\ProductionComponentsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

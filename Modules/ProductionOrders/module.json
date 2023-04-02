@@ -1,0 +1,13 @@
+{
+    "name": "ProductionOrders",
+    "alias": "productionorders",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProductionOrders\\Providers\\ProductionOrdersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
